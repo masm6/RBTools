@@ -23,7 +23,7 @@
 
 -(void)rb_safeSetObject:(id)anObject forKey:(id<NSCopying>)aKey{
     if (anObject == nil) {
-        kLTNSLog(@" carch %s can add nil object into NSMutableDictionary", __FUNCTION__);
+        NSLog(@" carch %s can add nil object into NSMutableDictionary", __FUNCTION__);
     } else {
         [self rb_safeSetObject:anObject forKey:aKey];
     }
@@ -31,7 +31,7 @@
 
 -(void)rb_safeSetValue:(id)value forKey:(NSString *)key{
     if (value == nil) {
-        kLTNSLog(@" carch %s can add nil object into NSMutableDictionary", __FUNCTION__);
+        NSLog(@" carch %s can add nil object into NSMutableDictionary", __FUNCTION__);
     } else {
         [self rb_safeSetValue:value forKey:key];
     }
@@ -39,7 +39,7 @@
 
 - (void)rb_safeRemoveObjectForKey:(id)aKey {
     if (nil == aKey) {
-        kLTNSLog(@" carch %s can remove  object for nil key", __FUNCTION__);
+        NSLog(@" carch %s can remove  object for nil key", __FUNCTION__);
     }else {
         [self rb_safeRemoveObjectForKey:aKey];
         

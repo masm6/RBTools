@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3734A3611FFFE8BE00964CCC /* UIButton+RBCountTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 3734A35F1FFFE8BE00964CCC /* UIButton+RBCountTime.h */; };
+		3734A3621FFFE8BE00964CCC /* UIButton+RBCountTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3734A3601FFFE8BE00964CCC /* UIButton+RBCountTime.m */; };
+		3734A3651FFFED2500964CCC /* NSObject+Args.h in Headers */ = {isa = PBXBuildFile; fileRef = 3734A3631FFFED2500964CCC /* NSObject+Args.h */; };
+		3734A3661FFFED2500964CCC /* NSObject+Args.m in Sources */ = {isa = PBXBuildFile; fileRef = 3734A3641FFFED2500964CCC /* NSObject+Args.m */; };
+		3734A3691FFFEEC900964CCC /* UIControl+Repeat.h in Headers */ = {isa = PBXBuildFile; fileRef = 3734A3671FFFEEC900964CCC /* UIControl+Repeat.h */; };
+		3734A36A1FFFEEC900964CCC /* UIControl+Repeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3734A3681FFFEEC900964CCC /* UIControl+Repeat.m */; };
+		3734A36D1FFFF3FE00964CCC /* UINavigationController+RBStackManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3734A36B1FFFF3FE00964CCC /* UINavigationController+RBStackManager.h */; };
+		3734A36E1FFFF3FE00964CCC /* UINavigationController+RBStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3734A36C1FFFF3FE00964CCC /* UINavigationController+RBStackManager.m */; };
 		37C1AC351FFE949B00E91FEA /* RBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C1AC331FFE949B00E91FEA /* RBTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37C1AC3E1FFEA25500E91FEA /* CustomAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C1AC3C1FFEA25500E91FEA /* CustomAlertController.h */; };
 		37C1AC3F1FFEA25500E91FEA /* CustomAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C1AC3D1FFEA25500E91FEA /* CustomAlertController.m */; };
@@ -29,6 +37,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3734A35F1FFFE8BE00964CCC /* UIButton+RBCountTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+RBCountTime.h"; sourceTree = "<group>"; };
+		3734A3601FFFE8BE00964CCC /* UIButton+RBCountTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RBCountTime.m"; sourceTree = "<group>"; };
+		3734A3631FFFED2500964CCC /* NSObject+Args.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Args.h"; sourceTree = "<group>"; };
+		3734A3641FFFED2500964CCC /* NSObject+Args.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Args.m"; sourceTree = "<group>"; };
+		3734A3671FFFEEC900964CCC /* UIControl+Repeat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+Repeat.h"; sourceTree = "<group>"; };
+		3734A3681FFFEEC900964CCC /* UIControl+Repeat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Repeat.m"; sourceTree = "<group>"; };
+		3734A36B1FFFF3FE00964CCC /* UINavigationController+RBStackManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RBStackManager.h"; sourceTree = "<group>"; };
+		3734A36C1FFFF3FE00964CCC /* UINavigationController+RBStackManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RBStackManager.m"; sourceTree = "<group>"; };
 		37C1AC301FFE949B00E91FEA /* RBTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RBTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C1AC331FFE949B00E91FEA /* RBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBTools.h; sourceTree = "<group>"; };
 		37C1AC341FFE949B00E91FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +79,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3734A35E1FFFE72700964CCC /* MyCategory */ = {
+			isa = PBXGroup;
+			children = (
+				3734A35F1FFFE8BE00964CCC /* UIButton+RBCountTime.h */,
+				3734A3601FFFE8BE00964CCC /* UIButton+RBCountTime.m */,
+				3734A3631FFFED2500964CCC /* NSObject+Args.h */,
+				3734A3641FFFED2500964CCC /* NSObject+Args.m */,
+				3734A3671FFFEEC900964CCC /* UIControl+Repeat.h */,
+				3734A3681FFFEEC900964CCC /* UIControl+Repeat.m */,
+				3734A36B1FFFF3FE00964CCC /* UINavigationController+RBStackManager.h */,
+				3734A36C1FFFF3FE00964CCC /* UINavigationController+RBStackManager.m */,
+			);
+			path = MyCategory;
+			sourceTree = "<group>";
+		};
 		37C1AC261FFE949B00E91FEA = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				37C1AC331FFE949B00E91FEA /* RBTools.h */,
+				3734A35E1FFFE72700964CCC /* MyCategory */,
 				37C1AC401FFEA25C00E91FEA /* SafeCategory */,
 				37C1AC3B1FFEA25500E91FEA /* CustomAlertController */,
 				37C1AC341FFE949B00E91FEA /* Info.plist */,
@@ -130,12 +162,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				37C1AC531FFEA25C00E91FEA /* NSDictionary+RBSafeDictionary.h in Headers */,
+				3734A3651FFFED2500964CCC /* NSObject+Args.h in Headers */,
 				37C1AC3E1FFEA25500E91FEA /* CustomAlertController.h in Headers */,
 				37C1AC5D1FFEA25C00E91FEA /* NSObject+RBMethodSwizzling.h in Headers */,
 				37C1AC551FFEA25C00E91FEA /* NSMutableArray+RBSafeMutableArray.h in Headers */,
 				37C1AC5F1FFEA25C00E91FEA /* NSString+RBSafeString.h in Headers */,
 				37C1AC351FFE949B00E91FEA /* RBTools.h in Headers */,
+				3734A36D1FFFF3FE00964CCC /* UINavigationController+RBStackManager.h in Headers */,
 				37C1AC571FFEA25C00E91FEA /* NSMutableDictionary+RBSafeMutableDictionary.h in Headers */,
+				3734A3691FFFEEC900964CCC /* UIControl+Repeat.h in Headers */,
+				3734A3611FFFE8BE00964CCC /* UIButton+RBCountTime.h in Headers */,
 				37C1AC511FFEA25C00E91FEA /* NSArray+RBSafeArray.h in Headers */,
 				37C1AC5B1FFEA25C00E91FEA /* NSNumber+RBSafeNumber.h in Headers */,
 				37C1AC591FFEA25C00E91FEA /* NSMutableString+RBSafeMutableString.h in Headers */,
@@ -214,8 +250,12 @@
 				37C1AC541FFEA25C00E91FEA /* NSDictionary+RBSafeDictionary.m in Sources */,
 				37C1AC3F1FFEA25500E91FEA /* CustomAlertController.m in Sources */,
 				37C1AC521FFEA25C00E91FEA /* NSArray+RBSafeArray.m in Sources */,
+				3734A36A1FFFEEC900964CCC /* UIControl+Repeat.m in Sources */,
 				37C1AC5C1FFEA25C00E91FEA /* NSNumber+RBSafeNumber.m in Sources */,
 				37C1AC5A1FFEA25C00E91FEA /* NSMutableString+RBSafeMutableString.m in Sources */,
+				3734A3621FFFE8BE00964CCC /* UIButton+RBCountTime.m in Sources */,
+				3734A36E1FFFF3FE00964CCC /* UINavigationController+RBStackManager.m in Sources */,
+				3734A3661FFFED2500964CCC /* NSObject+Args.m in Sources */,
 				37C1AC601FFEA25C00E91FEA /* NSString+RBSafeString.m in Sources */,
 				37C1AC561FFEA25C00E91FEA /* NSMutableArray+RBSafeMutableArray.m in Sources */,
 				37C1AC581FFEA25C00E91FEA /* NSMutableDictionary+RBSafeMutableDictionary.m in Sources */,

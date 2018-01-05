@@ -23,10 +23,10 @@
     if (cnt == 0) {
         return [self rb_safeInitWithObjects:objects forKeys:keys count:0];
     }else if (nil == objects) {
-        kLTNSLog(@" carch %s object can't be nil", __FUNCTION__);
+        NSLog(@" carch %s object can't be nil", __FUNCTION__);
         return nil;
     }else if (nil == keys) {
-        kLTNSLog(@" carch %s key can't be nil", __FUNCTION__);
+        NSLog(@" carch %s key can't be nil", __FUNCTION__);
         NSLog(@"keys is nil");
         return nil;
     }else {

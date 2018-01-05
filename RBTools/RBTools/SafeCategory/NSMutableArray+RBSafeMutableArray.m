@@ -30,14 +30,14 @@
 
 - (void)rb_safeAddObject:(id)obj {
     if (obj == nil) {
-        kLTNSLog(@" carch %s can add nil object into NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s can add nil object into NSMutableArray", __FUNCTION__);
     } else {
         [self rb_safeAddObject:obj];
     }
 }
 - (void)rb_safeRemoveObject:(id)obj {
     if (obj == nil) {
-        kLTNSLog(@" carch %s call -removeObject:, but argument obj is nil", __FUNCTION__);
+        NSLog(@" carch %s call -removeObject:, but argument obj is nil", __FUNCTION__);
     }else {
         [self rb_safeRemoveObject:obj];
     }
@@ -45,9 +45,9 @@
 
 - (void)rb_safeInsertObject:(id)anObject atIndex:(NSUInteger)index {
     if (anObject == nil) {
-        kLTNSLog(@" carch %s can't insert nil into NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s can't insert nil into NSMutableArray", __FUNCTION__);
     } else if (index > self.count) {
-        kLTNSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
     } else {
         [self rb_safeInsertObject:anObject atIndex:index];
     }
@@ -55,10 +55,10 @@
 
 - (id)rb_safeObjectAtIndex:(NSUInteger)index {
     if (self.count == 0) {
-        kLTNSLog(@" carch %s can't get any object from an empty NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s can't get any object from an empty NSMutableArray", __FUNCTION__);
         return nil;
     }else if (index > self.count) {
-        kLTNSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
         return nil;
     }else {
         return [self rb_safeObjectAtIndex:index];
@@ -67,10 +67,10 @@
 
 - (void)rb_safeRemoveObjectAtIndex:(NSUInteger)index {
     if (self.count <= 0) {
-        kLTNSLog(@" carch %s can't get any object from an empty NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s can't get any object from an empty NSMutableArray", __FUNCTION__);
         return;
     }else if (index >= self.count) {
-        kLTNSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
         return;
     }else {
         [self rb_safeRemoveObjectAtIndex:index];
@@ -79,10 +79,10 @@
 
 - (void)rb_safeReplaceObjectAtIndex:(NSUInteger)index withObject:(id)anObject {
     if (index >= [self count]) {
-        kLTNSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
         return;
     }else if (!anObject) {
-        kLTNSLog(@" carch %s can't get any object from an empty NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s can't get any object from an empty NSMutableArray", __FUNCTION__);
         return;
     }else {
         [self rb_safeReplaceObjectAtIndex:index withObject:anObject];
@@ -91,12 +91,12 @@
 
 - (void)rb_safeSetObject:(id)anObject atIndex:(NSUInteger)index{
     if (nil == anObject) {
-        kLTNSLog(@" carch %s object can't be nil", __FUNCTION__);
+        NSLog(@" carch %s object can't be nil", __FUNCTION__);
         NSLog(@"不能为空");
         return;
     }else if (index>self.count) {
         //可以在最末位增加
-        kLTNSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
         return;
     }else {
         [self rb_safeSetObject:anObject atIndex:index];
@@ -106,10 +106,10 @@
 
 -(void)rb_safeSetObject:(id)anObject atIndexedSubscript:(NSUInteger)index{
     if (nil == anObject) {
-        kLTNSLog(@" carch %s object can't be nil", __FUNCTION__);
+        NSLog(@" carch %s object can't be nil", __FUNCTION__);
         return;
     }else if (index > self.count) {
-        kLTNSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
         //可以在最末位增加
         return;
     }else {
@@ -119,10 +119,10 @@
 
 - (void)rb_safeRemoveObjectsInRange:(NSRange)range{
     if (range.location > self.count) {
-        kLTNSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
         return;
     }else if ((range.location + range.length) > self.count) {
-        kLTNSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
+        NSLog(@" carch %s index out of bounds in NSMutableArray", __FUNCTION__);
         return;
     }else {
         [self rb_safeRemoveObjectsInRange:range];

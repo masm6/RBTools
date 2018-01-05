@@ -22,7 +22,7 @@
 
 - (unichar)rb_safeCharacterAtIndex:(NSUInteger)index {
     if (index >= [self length]) {
-        kLTNSLog(@" carch %s index out of bounds in string", __FUNCTION__);
+        NSLog(@" carch %s index out of bounds in string", __FUNCTION__);
         return 0;
     }else {
         return [self rb_safeCharacterAtIndex:index];
@@ -31,7 +31,7 @@
 
 - (NSString *)rb_safeSubstringWithRange:(NSRange)range {
     if (range.location + range.length > self.length) {
-        kLTNSLog(@" carch %s range out of bounds in string", __FUNCTION__);
+        NSLog(@" carch %s range out of bounds in string", __FUNCTION__);
         return @"";
     }else {
         return [self rb_safeSubstringWithRange:range];

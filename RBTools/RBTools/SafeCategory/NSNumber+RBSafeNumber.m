@@ -22,7 +22,7 @@
 
 - (BOOL)rb_safeIsEqualToNumber:(NSNumber *)number {
     if (nil == number) {
-        kLTNSLog(@" carch %s can't isEqual to nil number ", __FUNCTION__);
+        NSLog(@" carch %s can't isEqual to nil number ", __FUNCTION__);
         return NO;
     }else {
         return [self rb_safeIsEqualToNumber:number];
@@ -31,7 +31,7 @@
 
 - (NSComparisonResult)rb_safeCompare:(NSNumber *)number {
     if (nil == number) {
-        kLTNSLog(@" carch %s can't compare to nil number ", __FUNCTION__);
+        NSLog(@" carch %s can't compare to nil number ", __FUNCTION__);
         return NSOrderedAscending;
     }else {
         return [self rb_safeCompare:number];

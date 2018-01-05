@@ -25,7 +25,7 @@
 
 - (void)rb_safeAppendString:(NSString *)aString {
     if (nil == aString) {
-        kLTNSLog(@" carch %s can't append a nil object to NSMutableString", __FUNCTION__);
+        NSLog(@" carch %s can't append a nil object to NSMutableString", __FUNCTION__);
     }else {
         [self rb_safeAppendString:aString];
     }
@@ -33,7 +33,7 @@
 
 - (void)rb_safeAppendFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2) {
     if (nil == format) {
-        kLTNSLog(@" carch %s can't append a nil object to NSMutableString", __FUNCTION__);
+        NSLog(@" carch %s can't append a nil object to NSMutableString", __FUNCTION__);
     }else {
         va_list arguments;
         va_start(arguments, format);
@@ -46,7 +46,7 @@
 
 - (void)rb_safeSetString:(NSString *)aString {
     if (nil == aString) {
-        kLTNSLog(@" carch %s can't set a nil string to NSMutableString", __FUNCTION__);
+        NSLog(@" carch %s can't set a nil string to NSMutableString", __FUNCTION__);
     }else {
         [self rb_safeSetString:aString];
     }
@@ -54,9 +54,9 @@
 
 - (void)rb_safeInsertString:(NSString *)aString atIndex:(NSUInteger)index {
     if (index > [self length]) {
-        kLTNSLog(@" carch %s index out of bounds in NSMutableString", __FUNCTION__);
+        NSLog(@" carch %s index out of bounds in NSMutableString", __FUNCTION__);
     }else if (nil == aString) {
-        kLTNSLog(@" carch %s can't insert a nil string to NSMutableString", __FUNCTION__);
+        NSLog(@" carch %s can't insert a nil string to NSMutableString", __FUNCTION__);
     }else {
         [self rb_safeInsertString:aString atIndex:index];
     }
