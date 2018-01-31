@@ -20,7 +20,7 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 //设置界面的按钮显示 根据自己需求设置
                 [self setTitle:tittle forState:UIControlStateNormal];
-                NSString *strTime = [NSString stringWithFormat:@"%.2ld", timeout];
+                NSString *strTime = [NSString stringWithFormat:@"%.2ld", (long)timeout];
                 [self setTitle:[NSString stringWithFormat:@"%@%@", strTime, waitTittle] forState:UIControlStateDisabled];
                 self.enabled = YES;
                 self.userInteractionEnabled = YES;
@@ -28,7 +28,7 @@
         }else{
             //            int minutes = timeout / 60;
             //            int seconds = timeout % 60;
-            NSString *strTime = [NSString stringWithFormat:@"%.2ld", blockTimeout];
+            NSString *strTime = [NSString stringWithFormat:@"%.2ld", (long)blockTimeout];
             dispatch_async(dispatch_get_main_queue(), ^{
                 //设置界面的按钮显示 根据自己需求设置
                 [UIView beginAnimations:nil context:nil];
