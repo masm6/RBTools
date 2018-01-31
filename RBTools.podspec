@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RBTools"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "RBTools is a collection of iOS tools."
 
   # This description is used to generate tags and improve search results.
@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/masm6/RBTools.git", :tag => "0.0.4" }
+  s.source       = { :git => "https://github.com/masm6/RBTools.git", :tag => "0.0.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
