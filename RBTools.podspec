@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RBTools"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "RBTools is a collection of iOS tools."
 
   # This description is used to generate tags and improve search results.
@@ -62,8 +62,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+   s.platform     = :ios
+   s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/masm6/RBTools.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/masm6/RBTools.git", :tag => "0.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "RBTools", "RBTools／RBTools/Tools/*.{h,m}"
+  s.source_files  = "RBTools/RBtools/Tools/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -114,6 +114,8 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
+    s.frameworks = 'UIKit'
+
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
