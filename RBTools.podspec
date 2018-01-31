@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RBTools"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "RBTools is a collection of iOS tools."
 
   # This description is used to generate tags and improve search results.
@@ -76,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/masm6/RBTools.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/masm6/RBTools.git", :tag => "0.0.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "RBTools/RBtools/Tools/*.{h,m}"
+  s.source_files  = "RBTools","RBTools/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

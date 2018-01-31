@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37EBDA00202175DA00C4E7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EBD9FF202175DA00C4E7D1 /* AppDelegate.m */; };
-		37EBDA03202175DA00C4E7D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EBDA02202175DA00C4E7D1 /* ViewController.m */; };
-		37EBDA06202175DA00C4E7D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EBDA04202175DA00C4E7D1 /* Main.storyboard */; };
-		37EBDA08202175DA00C4E7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EBDA07202175DA00C4E7D1 /* Assets.xcassets */; };
-		37EBDA0B202175DA00C4E7D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EBDA09202175DA00C4E7D1 /* LaunchScreen.storyboard */; };
 		37EBDA0E202175DA00C4E7D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EBDA0D202175DA00C4E7D1 /* main.m */; };
 		37EBDA322021764E00C4E7D1 /* CustomAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EBDA172021764E00C4E7D1 /* CustomAlertController.m */; };
 		37EBDA332021764E00C4E7D1 /* NSObject+Args.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EBDA1A2021764E00C4E7D1 /* NSObject+Args.m */; };
@@ -30,13 +25,6 @@
 
 /* Begin PBXFileReference section */
 		37EBD9FB202175DA00C4E7D1 /* RBTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		37EBD9FE202175DA00C4E7D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		37EBD9FF202175DA00C4E7D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		37EBDA01202175DA00C4E7D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		37EBDA02202175DA00C4E7D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		37EBDA05202175DA00C4E7D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		37EBDA07202175DA00C4E7D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		37EBDA0A202175DA00C4E7D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37EBDA0C202175DA00C4E7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37EBDA0D202175DA00C4E7D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37EBDA162021764E00C4E7D1 /* CustomAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertController.h; sourceTree = "<group>"; };
@@ -97,13 +85,6 @@
 		37EBD9FD202175DA00C4E7D1 /* RBTools */ = {
 			isa = PBXGroup;
 			children = (
-				37EBD9FE202175DA00C4E7D1 /* AppDelegate.h */,
-				37EBD9FF202175DA00C4E7D1 /* AppDelegate.m */,
-				37EBDA01202175DA00C4E7D1 /* ViewController.h */,
-				37EBDA02202175DA00C4E7D1 /* ViewController.m */,
-				37EBDA04202175DA00C4E7D1 /* Main.storyboard */,
-				37EBDA07202175DA00C4E7D1 /* Assets.xcassets */,
-				37EBDA09202175DA00C4E7D1 /* LaunchScreen.storyboard */,
 				37EBDA0C202175DA00C4E7D1 /* Info.plist */,
 				37EBDA0D202175DA00C4E7D1 /* main.m */,
 				37EBDA142021764E00C4E7D1 /* Tools */,
@@ -226,9 +207,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37EBDA0B202175DA00C4E7D1 /* LaunchScreen.storyboard in Resources */,
-				37EBDA08202175DA00C4E7D1 /* Assets.xcassets in Resources */,
-				37EBDA06202175DA00C4E7D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +221,6 @@
 				37EBDA3B2021764E00C4E7D1 /* NSMutableString+RBSafeMutableString.m in Sources */,
 				37EBDA352021764E00C4E7D1 /* UIControl+Repeat.m in Sources */,
 				37EBDA3C2021764E00C4E7D1 /* NSNumber+RBSafeNumber.m in Sources */,
-				37EBDA03202175DA00C4E7D1 /* ViewController.m in Sources */,
 				37EBDA322021764E00C4E7D1 /* CustomAlertController.m in Sources */,
 				37EBDA362021764E00C4E7D1 /* UINavigationController+RBStackManager.m in Sources */,
 				37EBDA392021764E00C4E7D1 /* NSMutableArray+RBSafeMutableArray.m in Sources */,
@@ -253,31 +230,11 @@
 				37EBDA0E202175DA00C4E7D1 /* main.m in Sources */,
 				37EBDA382021764E00C4E7D1 /* NSDictionary+RBSafeDictionary.m in Sources */,
 				37EBDA342021764E00C4E7D1 /* UIButton+RBCountTime.m in Sources */,
-				37EBDA00202175DA00C4E7D1 /* AppDelegate.m in Sources */,
 				37EBDA3E2021764E00C4E7D1 /* NSString+RBSafeString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		37EBDA04202175DA00C4E7D1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37EBDA05202175DA00C4E7D1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		37EBDA09202175DA00C4E7D1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37EBDA0A202175DA00C4E7D1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		37EBDA0F202175DA00C4E7D1 /* Debug */ = {
